@@ -28,10 +28,10 @@ services:
     container_name: kodigo-os-mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: kodigo-os
-      MYSQL_USER: kodigo-os
-      MYSQL_PASSWORD: T$9mA!4xB2@qF7#rV8
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
     ports:
       - "3307:3306"
     volumes:

@@ -13,7 +13,6 @@ WORKDIR /var/www/html
 
 COPY . .
 
-RUN composer install --prefer-dist --no-interaction
 
 RUN mkdir -p runtime web/assets && \
     chown -R www-data:www-data /var/www/html
