@@ -10,8 +10,29 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+/**
+ * @OA\Info(
+ *     title="Minha API",
+ *     version="1.0.0",
+ *     description="Documentação da API"
+ * )
+ */
+
 class SiteController extends Controller
 {
+
+    /**
+     * @OA\Get(
+     *     path="/site/ping",
+     *     summary="Teste de funcionamento",
+     *     @OA\Response(response=200, description="API OK")
+     * )
+     */
+    public function actionPing()
+    {
+        return "OK";
+    }
+    
     /**
      * {@inheritdoc}
      */

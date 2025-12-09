@@ -12,7 +12,13 @@ use yii\web\NotFoundHttpException;
 
 class OsController extends Controller
 {
-  
+    /**
+     * @OA\Get(
+     *     path="/os",
+     *     summary="Lista ordens de serviço",
+     *     @OA\Response(response=200, description="Sucesso")
+     * )
+    */
     public function actionIndex()
     {
         $os = Os::find()->all();

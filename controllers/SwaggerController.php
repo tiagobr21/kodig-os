@@ -1,4 +1,4 @@
-<?php
+a<?php
 
 namespace app\controllers;
 
@@ -12,6 +12,7 @@ class SwaggerController extends Controller
         return [
             'index' => [
                 'class' => SwaggerAction::class,
+                'apiJsonUrl' => ['/swagger-json/index'],
             ],
         ];
     }
