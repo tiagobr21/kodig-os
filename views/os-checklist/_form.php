@@ -20,7 +20,7 @@ $this->title = "Criar Checklist";
         ['prompt' => 'Selecione a Ordem de Serviço']
     ) ?>
 
-    <?= $form->field($model, 'description')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'item_label')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'completed')->checkbox() ?>
 
